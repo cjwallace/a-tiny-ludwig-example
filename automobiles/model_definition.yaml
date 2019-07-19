@@ -12,6 +12,8 @@ input_features:
     type: numerical
   - name: Horsepower
     type: numerical
+    preprocessing:
+      missing_value_strategy: fill_with_mean
   - name: Weight
     type: numerical
   - name: Acceleration

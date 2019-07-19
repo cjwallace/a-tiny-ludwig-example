@@ -2,13 +2,15 @@
 
 Just a clone-able, runnable (🤞), minimal example of the [Ludwig](https://uber.github.io/ludwig) low code toolbox.
 
-The example is the Auto MPG example used in the [Ludwig documentation](https://uber.github.io/ludwig/examples/#simple-regression-fuel-efficiency-prediction). Here, we include the dataset and explicit instructions.
+The example is the Auto MPG example used in the [Ludwig documentation](https://uber.github.io/ludwig/examples/#simple-regression-fuel-efficiency-prediction).
+That is itself a recreation of the [basic regression](https://www.tensorflow.org/tutorials/keras/basic_regression) TensorFlow example.
+Here, we include the dataset and explicit instructions.
 
 ## contents
 
 The `automobiles` directory contains:
 
-- A cleaned csv of the [Auto MPG](https://archive.ics.uci.edu/ml/datasets/auto+mpg) data set. Rows with missing values have been removed to avoid parsing errors.
+- A cleaned csv of the [Auto MPG](https://archive.ics.uci.edu/ml/datasets/auto+mpg) data set. Rows with missing values have had the `?` character from the original dataset removed to avoid parsing errors.
 - A model specification file, `model_definition.yaml`.
 - A run script with the right Ludwig invocation, `experiment.sh`.
 
